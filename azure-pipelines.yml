@@ -19,7 +19,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'echo $(Test) > secret.txt'
+    script: 'echo $(StorageConnectionString) > secret.txt'
 
 - task: CopyFiles@2
   inputs:
