@@ -19,7 +19,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'echo $(Vm-spoke-01) > secret.txt'
+    script: 'echo $(KeyVault-test) > secret.txt'
 
 - task: CopyFiles@2
   inputs:
